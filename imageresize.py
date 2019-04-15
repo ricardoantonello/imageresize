@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 '''
-Autor: Ricardo Antonello (ricardo@antonello.com.br)
-ATENÇÃO!!! Os arquivos dentro de 'origem' devem estar dentro de pelo menos uma pasta
-A largura é setada 
-Escolha True para COM CROP e o crop é automático pela menor dimensão da imagem. O crop é feito antes de redimensionar
-Escolha False para SEM CROP.
+Autor: Ricardo Antonello 
+ricardo@antonello.com.br
+www.antonello.com.br
 '''
 
 # Importação dos pacotes necessários
@@ -17,10 +15,12 @@ import time
 import datetime
 
 # inicialização de variáveis
-ORIGEM = '.' # nome da pasta com os arquivos. Esta pastsa não será apagada.
+#ATENÇÃO!!! Os arquivos dentro de 'origem' devem estar dentro de pelo menos uma pasta
+ORIGEM = '.' # nome da pasta com os arquivos. Esta pastsa não será apagada. 
 DESTINO = 'redim' # nome da pasta de destino
 FORMATO = 'jpg' # formato do arquivo de destino (a função imwrite escolhe o formato baseado ba extensão do arquivo)
 LARGURA = 400 # em pixels
+#Defina CROP = True e o crop é automático pela menor dimensão da imagem. O crop é feito antes de redimensionar
 CROP = True # se true corta a imagem para não perder a proporção
 
 pastas = ([pasta for pasta in os.listdir(ORIGEM) if os.path.isdir(os.path.join(ORIGEM, pasta))])
