@@ -1,4 +1,4 @@
-## image resize
+## image resizer
 
 It's a hard coded configure system to resize recursively images in a folder tree.
 Enjoy it! ;)
